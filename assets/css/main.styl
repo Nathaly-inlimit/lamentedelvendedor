@@ -8,7 +8,12 @@ h1, h2, h3, h4, h5
 p 
     font-family 'Open Sans', sans-serif
     font-size 19px
-    
+.div-white
+    background-color #fff
+    height 75px
+    width 100%
+    position absolute
+    top -48px  
 .red-strike
     width 167px
     background red
@@ -26,6 +31,12 @@ p
     width 160px
     background-color white
     margin auto
+.separator-turquoise
+    height 2px
+    width 12%
+    background-color: #1dd3e3
+    margin-top 3%
+    margin-bottom 2%
 .btn 
     text-transform uppercase
     &:hover
@@ -50,9 +61,13 @@ p
 .bg-gray-dark
         background-color #4c4b4b
 .header 
-    background-color black
+    background gray /* For browsers that do not support gradients */
+    background -webkit-radial-gradient(#171717 1%, #151414 14%, #000 61%) /* Safari 5.1-6.0 */
+    background -o-radial-gradient(#171717 1%, #151414 14%, #000 61%) /* For Opera 11.6 to 12.0 */
+    background -moz-radial-gradient(#171717 1%, #151414 14%, #000 61%) /* For Firefox 3.6 to 15 */
+    background radial-gradient(#171717 1%, #151414 14%, #000 61%) /* Standard syntax (must be last) */
     color white
-    height 600px
+    height 700px
     
     h1
         font-size 3.5rem
@@ -70,7 +85,16 @@ p
     h3 
             margin-top 5%
             font-weight 400
-            
+    .brain
+            background-image url(../img/brain.png)
+            height 220px
+            width 100%
+            background-size contain;
+            background-repeat no-repeat
+            background-position-x 380px
+            position relative
+            bottom -64px
+            transform rotate(-7deg)
 
 
 ol 
@@ -270,6 +294,30 @@ section.container
 
 .blocks
     color white
+    
+    .bg-danger
+        li:before  
+            content  "✘  " 
+            color  white /* or whatever color you prefer */
+            font-size 1em
+    .bg-success
+        li:before  
+            content  "✔ " 
+            color  white /* or whatever color you prefer */
+            font-size 1em   
+    
+    ul  
+        list-style  none 
+        padding 0 
+        margin 0 
+         
+        li   
+            padding-left  1em  
+            text-indent  -.7em 
+        li:before  
+            content  "✔ " 
+            color  white 
+            font-size 1em 
 
 .garantia 
     h2
@@ -280,6 +328,22 @@ section.container
     h3
         text-transform uppercase
         font-weight 700
+        
+    ul  
+        list-style  none 
+        padding 0 
+        margin 0 
+         
+        li   
+            padding-left  1em  
+            text-indent  -.7em
+        li:before  
+            content  "✔ " 
+            color  #FFC201
+            font-size 1.2em 
+            
+            
+
         
 .contador
     .reloj
@@ -292,7 +356,7 @@ section.container
         border-radius 5px
         padding-bottom 5px
         span 
-            color orange
+            color #ffc201
             
 
 #accordion
@@ -313,6 +377,24 @@ section.container
             font-size 1.1em
         p 
             font-size 14px
+            
+        .tab-title:after 
+            content '\002B'
+            margin-left 5px
+            background-color orange
+            color white
+            border-radius 100%
+            padding 0% 6px 3px 6px
+            line-height 1.2
+            font-weight bold
+            position relative
+            top -25px
+            float right
+            
+        .tab-title.active:after 
+            content "\2212"
+            background-color turquoise
+            
             
 .whatsapp .btn-success 
     background-color white!important
