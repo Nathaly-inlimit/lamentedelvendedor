@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  <body>
+  <body onLoad="clock(1);">
     <section class="header ">
       <div class="container text-center">
         <div class="row">
@@ -307,7 +307,7 @@
         <div class="row vertical-center">
           <div class="col-sm-12 text-center ">
             <h2 class="h1 mb-4">Cuando el reloj llegue a <span class="yellow"> cero </span> será imposible inscribirte.</h2>
-            <div class="reloj"><span>19</span>d <span>6</span>h <span>30</span>m <span>39</span>s </div>
+            <div class="reloj" id="clockdiv1"></div>
           </div>
         </div>
       </div>
@@ -387,6 +387,7 @@
     	</div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
