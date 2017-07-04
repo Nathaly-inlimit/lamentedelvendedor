@@ -1,6 +1,36 @@
 
-        
-/* css */
+        /* css */
+.carousel-control-prev-icon
+    background-image url('../img/comilla-left.png')!important
+    height 50px
+    width 30px!important
+.carousel-control-next-icon
+    background-image url('../img/comilla-right.png')!important
+    height 50px
+    width 30px!important
+ 
+.carousel-indicators li
+    max-width 13%!important
+    text-indent -40px!important
+.carousel-indicators li img
+    width 50px
+    height 50px
+    margin 5px
+    cursor pointer
+    opacity 0.4
+    overflow hidden
+    transition all 0.4s
+    
+.carousel-indicators li.active img
+    background #333333
+    width 110px
+    height 110px
+    opacity 1
+    overflow hidden
+   
+.carousel-indicators 
+    bottom -55px!important
+    
 
 h1, h2, h3, h4, h5 
     font-family 'Raleway', sans-serif
@@ -8,6 +38,7 @@ h1, h2, h3, h4, h5
 p 
     font-family 'Open Sans', sans-serif
     font-size 19px
+    
 .div-white
     background-color #fff
     height 75px
@@ -54,6 +85,9 @@ p
     vertical-align middle
     text-align center
     width 60%
+    
+.cursive
+    font-style italic
 .yellow
     color #FFC201
  .black
@@ -102,39 +136,41 @@ p
             bottom -64px
             transform rotate(-7deg)
 
-
-ol 
-   list-style: none
- 
-   li 
-    counter-increment item
-    margin-bottom 3%
-    padding 3% 0% 0%
-    border-left 1px solid #a7a7a7
-    border-top 1px solid #a7a7a7
-    position relative
-    left 0%
-    
-    div
-        position absolute
-        top 45%
-        left 5%
-        text-align center
- 
-   li:before 
-        margin-right 10px
-        content counter(item)
-        background #f0ad4e
-        border-radius 6%
-        color #fff
-        width 1.5em
-        text-align center
-        display inline-block
-        font-size 2.4em
+.box-list
+    ol 
+       list-style none
+     
+       li 
+        counter-increment item
+        margin-bottom 3%
+        padding 3% 0% 0%
+        border-left 1px solid #a7a7a7
+        border-top 1px solid #a7a7a7
         position relative
-        right 29px
+        left 0%
+        
+        div
+            position absolute
+            top 45%
+            left 5%
+            text-align center
+     
+       li:before 
+            margin-right 10px
+            content counter(item)
+            background #f0ad4e
+            border-radius 6%
+            color #fff
+            width 1.5em
+            text-align center
+            display inline-block
+            font-size 2.4em
+            position relative
+            right 29px
      
 
+
+    
 section.container
     
     h2
@@ -142,14 +178,17 @@ section.container
             letter-spacing 3px
             font-weight bold
             
-
+    
 .testimonio 
     
     p 
         font-style italic
         
     img
-        border-radius 100%        
+        border-radius 100% 
+        
+    
+       
 .call-action.yellow
     background-color #ffc201
     
@@ -276,7 +315,8 @@ section.container
         margin 0 
          
         li   
-            padding-left  1em  
+            padding-left 1.2em
+            padding-right 3.2em
             text-indent  -.7em 
          
 
@@ -407,6 +447,9 @@ section.container
     
     h2 
         display inline
+        font-family "Century Gothic"
+        font-weight bold
+        font-size 1.7em
     p 
         display inline
         float right
